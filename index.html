@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osunkwo kingsley's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Replace the Font Awesome kit with CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="background-blur"></div>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <!-- <div class="logo" data-translate="logo">KO Portfolio</div> -->
+            <img src="./public/mountanlytics.png" alt="Mountanlytics" style="height: 50px;">
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about" data-translate="nav_about">About</a></li>
+                    <li><a href="#skills" data-translate="nav_skills">Skills</a></li>
+                    <li><a href="#projects" data-translate="nav_projects">Projects</a></li>
+                    <li><a href="#credentials" data-translate="nav_credentials">Credentials</a></li>
+                    <li><a href="#news" data-translate="nav_news">News</a></li>
+                    <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="language-selector">
+                    <i class="fas fa-globe"></i>
+                    <select id="languageSelect" onchange="changeLanguage()">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="sv">Svenska</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-translate="hero_name">Kingsley Osunkwo</h1>
+            <h2 data-translate="hero_title">Data Analyst | Urban Technology</h2>
+            <p data-translate="hero_subtitle">Insightful analysis for sustainability</p>
+            <!-- Add social links here -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/kingsley-osunkwo-222ba21a2/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/kingsleyosunkwo" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/Kingsleyosunkwo" target="_blank" title="X (Twitter)">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://medium.com/@kingsleyosunkwoofficedesk" title="Medium">
+                    <i class="fab fa-medium-m"></i>
+                </a>
+                <a href="https://wa.me/46739240261" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 data-translate="about_title">Bio</h2>
+        <div class="about-content">
+            <img src="./public/main.jpg" alt="Profile Picture" style="height: 300px; width: 300px; border-radius: 50%;">
+            <div class="about-text">
+                <p data-translate="about_text">Kingsley is a Masters researcher at Umea University, Sweden, specializing in data magnification in urban spaces and urban centered technologies under the guidance of the Department of Geography. He earned his bachelor's from the Federal University of Technology, Owerri, supervised by Tpl. Dr Kalu O. Abaraikwu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>GIS</h3>
+                <p>ArcGIS, QGIS, Spatial Analysis, Mapping</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>Data Analysis</h3>
+                <p>R, Python, SQL, Statistical Analysis</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Data Visualization</h3>
+                <p>Tableau, R Shiny, Interactive Dashboards</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-drafting-compass"></i>
+                <h3>Design & Planning</h3>
+                <p>AutoCAD, Urban Planning, Technical Drawing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Featured Projects</h2>
+        <div class="projects-container">
+
+            
+            <!-- Project Card 1 -->
+            <div class="project-card" onclick="window.open('https://medium.com/@kingsleyosunkwoofficedesk/outlier-detection-ensuring-election-integrity-in-the-imo-state-presidential-elections-hng-task-974a2f2b6c8b', '_blank')">
+                <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*1TIveNdXLo3s4a_W2KWXbA.jpeg" 
+                     alt="Election Data Analysis Project">
+                <div class="project-card-content">
+                    <h3>Election Data Analysis</h3>
+                    <p>Outlier detection for ensuring election integrity in Imo State presidential elections</p>
+                    <div class="links">
+                        <a href="https://medium.com/@kingsleyosunkwoofficedesk/outlier-detection-ensuring-election-integrity-in-the-imo-state-presidential-elections-hng-task-974a2f2b6c8b" 
+                           target="_blank" 
+                           onclick="event.stopPropagation()">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="#" 
+                           onclick="window.open('https://github.com/kingsleyosunkwo/Outlier-Detection-in-Election-Data-Using-Geospatial-Analysis')"
+                           class="github-link">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Project Card 2 -->
+             <div class="project-card" onclick="window.open('https://medium.com/@kingsleyosunkwoofficedesk/lagos-flood-prediction-hng-task-2-42cf0532e580 ')">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Kvdxyisk4QN8NwaplKxFlQ.png" 
+                     alt="Election Data Analysis Project">
+                <div class="project-card-content">
+                    <h3>Lagos Flood Prediction— (HNG Task 2)</h3>
+                    <p>This project aims to predict flood occurrences in Lagos using historical weather data and machine learning techniques.</p>
+                    <div class="links">
+                        <a href="https://medium.com/@kingsleyosunkwoofficedesk/outlier-detection-ensuring-election-integrity-in-the-imo-state-presidential-elections-hng-task-974a2f2b6c8b" 
+                           target="_blank" 
+                           onclick="event.stopPropagation()">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="#" 
+                           onclick="window.open('https://github.com/kingsleyosunkwo/Lagos-Flood-Prediction--HNG-Task-2-')"
+                           class="github-link">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card" onclick="window.open('https://medium.com/@kingsleyosunkwoofficedesk/economic-variable-correlation-and-productivity-model-2679bb390091')">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ecJuozGIXU-xxMLaiFJlGA.jpeg" 
+                     alt="Election Data Analysis Project">
+                <div class="project-card-content">
+                    <h3>Unlocking Productivity</h3>
+                    <p>The Hidden Correlation Between Economic Variables in the United States</p>
+                    <div class="links">
+                        <a href="https://medium.com/@kingsleyosunkwoofficedesk/economic-variable-correlation-and-productivity-model-2679bb390091"
+                           target="_blank" 
+                           onclick="event.stopPropagation()">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="#" 
+                           onclick="window.open('https://github.com/kingsleyosunkwo/Economic-Variable-Correlation-and-Productivity-Model')"
+                           class="github-link">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this before the Contact Section -->
+    <section id="credentials" class="credentials">
+        <h2>Credentials & Certifications</h2>
+        <div class="credentials-container">
+            <!-- Academic Credentials -->
+            <div class="credentials-box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Academic</h3>
+                <ul class="credentials-list">
+                    <li>
+                        <a href="https://www.umu.se/en/ " class="credential-link">
+                            <i class="fas fa-award"></i>
+                            <span>MSc Spatial Planning and Sustainability - Umeå University</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://futo.edu.ng/" class="credential-link">
+                            <i class="fas fa-award"></i>
+                            <span>BSc Urban and Regional Planning - Federal University of Technology, Owerri</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Professional Certifications -->
+            <div class="credentials-box">
+                <i class="fas fa-certificate"></i>
+                <h3>Certifications</h3>
+                <ul class="credentials-list">
+                    <li>
+                        <a href="https://drive.google.com/drive/folders/1v6gCdCAw1npUzs7BNzLV3RyfQO8DNZrF?usp=sharing" class="credential-link">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Google Data Analytics Professional Certificate</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/drive/folders/1lIeTUNemJNsvUy9ShRON2UICqCsFgkY2?usp=sharing" class="credential-link">
+                            <i class="fas fa-check-circle"></i>
+                            <span>HNG Internship Certificate</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/drive/folders/1lwK3999cSehrJnE1I7WiWz0a0frnnUjg?usp=sharing " class="credential-link">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Harbor Heritage University; Certification in Technology for Business Growth</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CV Download -->
+            <div class="credentials-box">
+                <i class="fas fa-file-alt"></i>
+                <h3>Resume/CV</h3>
+                <div class="cv-download">
+                    <p>Download my complete CV to learn more about my experience and qualifications.</p>
+                    <a href="https://drive.google.com/file/d/1xkpW1XCoEt1GLDS6lwRiKLRIGkYFzKfo/view?usp=sharing" download class="cv-button">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <h2>Latest News & Updates</h2>
+        <div class="news-container">
+            <!-- News Item 1 -->
+            <div class="news-card">
+                <div class="news-date">
+                    <span class="month">MAR</span>
+                    <span class="year">2024</span>
+                </div>
+                <div class="news-content">
+                    <h3>Research Publication</h3>
+                    <p>Published research paper on urban data analytics in the Journal of Urban Technology.</p>
+                    <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="news-card">
+                <div class="news-date">
+                    <span class="month">FEB</span>
+                    <span class="year">2024</span>
+                </div>
+                <div class="news-content">
+                    <h3>Conference Presentation</h3>
+                    <p>Presented findings on sustainable urban development at the Nordic Urban Planning Conference.</p>
+                    <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="news-card">
+                <div class="news-date">
+                    <span class="month">JAN</span>
+                    <span class="year">2024</span>
+                </div>
+                <div class="news-content">
+                    <h3>Data Analysis Workshop</h3>
+                    <p>Led a workshop on GIS and spatial data analysis for urban planning students.</p>
+                    <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-4" id="contactForm">
+                    <div>
+                        <input type="text" name="name" placeholder="Name" class="form-input" required>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Email" class="form-input" required>
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Message" rows="4" class="form-input" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kingsley Osunkwo. All rights reserved.</p>
+    </footer>
+   
+</body>
+</html> 
